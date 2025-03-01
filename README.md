@@ -27,8 +27,7 @@ The purpose of this project is to:
   - Infrastructure improvement recommendations.
   - Fraud detection workflows.
   - Provincial and town-level water access reports.
-- **Data Dictionary**: Metadata documentation in [`docs/key_metrics.md`](docs/key_metrics.md).
-- **Reproducibility**: Standalone SQL scripts and Jupyter notebooks for easy replication.
+- **Reproducibility**:  Jupyter notebooks for easy replication.
 
 ---
 
@@ -49,7 +48,7 @@ The purpose of this project is to:
 ```plaintext
 ├── data/                   # Contains database   
 ├── notebooks/              # Jupyter notebooks for analysis
-├── docs/                   # Documentation and Maji_Ndogo_Project walk throughs
+├── docs/                   # Documentation
 ├── Auditor_report.csv      # contains records of audits
 ├── .env                    # Stores credentials (excluded from Git)              
 ├── README.md               # Project overview and setup instructions
@@ -58,13 +57,14 @@ The purpose of this project is to:
 ---
 
 ## The following libraries are necessary for this project:
+```plaintext
 jupyterlab==4.0.4                 # For running interactive Python and SQL notebooks
 mysql-connector-python==8.0.32    # For MySQL database connections
 pandas==2.0.3                     # Data manipulation
 sqlalchemy==2.0.20                # Database interactions
 ipython-sql==0.5.0                # Run SQL queries in Jupyter notebooks
 python-dotenv==1.0.0              # For loading environment variables
-
+```
 ---
 
 ## Installation Instructions
@@ -77,24 +77,27 @@ python-dotenv==1.0.0              # For loading environment variables
 ## Set-up
 You can use any of the following approaches to set up and run the project:
 1. ## For Quick Local Setup
-This method is ideal for running the project locally without additional configuration.
-- Download and install MySQL from [mysql.com/downloads](https://dev.mysql.com/downloads/)
-- Run this command to load the database schema: mysql -u [USERNAME] -p < data/md_water_services.sql
+  - This method is ideal for running the project locally without additional configuration.
+  - Download and install MySQL from [mysql.com/downloads](https://dev.mysql.com/downloads/)
+  - Run this command to load the database schema: mysql -u [USERNAME] -p < data/md_water_services.sql
 
-## Note
--In the notebooks, replace the placeholders([USERNAME] and [PASSWORD]) in the SQL connection string with your local MySQL credentials:
- %sql mysql+pymysql://[USERNAME]:[PASSWORD]@localhost:3306/md_water_services
-- Install Dependencies
-  pip install -r requirements.txt
--Run Jupyter Lab: jupyter lab
+  ## Note
+  - In the notebooks, replace the placeholders([USERNAME] and [PASSWORD]) in the SQL connection string with your local MySQL credentials:
+  - ## %sql mysql+pymysql://[USERNAME]:[PASSWORD]@localhost:3306/md_water_services
+  - Install Dependencies
+  - pip install -r requirements.txt
+  - Run Jupyter Lab
 
 2. ## Using the .env File Method
-   Copy the .env.example file, change the placeholders with your credentials, and rename it to .env
-   Add .env to .gitignore to exclude it from version control
-   install requirements and run jupyter lab
+- Copy the .env.example file, change the placeholders with your credentials, and rename it to .env
+- Add .env to .gitignore to exclude it from version control.
+- Install requirements and run jupyter lab
 
 ---
 
   ## Contribution Guidelines
 Contributions are welcome! If you have improvement suggestions, please fork the repository and create a pull request. For major changes, please open an issue first to discuss what you would like to change
   
+---
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
