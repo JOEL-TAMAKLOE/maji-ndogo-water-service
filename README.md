@@ -50,7 +50,8 @@ The purpose of this project is to:
 ├── notebooks/              # Jupyter notebooks for analysis
 ├── docs/                   # Documentation
 ├── Auditor_report.csv      # contains records of audits
-├── .env                    # Stores credentials (excluded from Git)              
+├── .env.example            #Template for MySQL credentials
+├── LICENSE                 # MIT license              
 ├── README.md               # Project overview and setup instructions
 └── requirements.txt        # Python dependencies
 ```
@@ -89,7 +90,7 @@ You can use any of the following approaches to set up and run the project:
   - Run Jupyter Lab
 
 2. ## Using the .env File Method
-- Copy the .env.example file, change the placeholders with your credentials, and rename it to .env
+- Copy the `.env.example` file, change the placeholders with your credentials, and rename it to .env
 - Add .env to .gitignore to exclude it from version control.
 - Install requirements and run jupyter lab
 
@@ -100,4 +101,4 @@ Contributions are welcome! If you have improvement suggestions, please fork the 
   
 ---
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
