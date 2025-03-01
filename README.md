@@ -82,8 +82,8 @@ You can use any of the following approaches to set up and run the project:
   - Run this command to load the database schema: mysql -u [USERNAME] -p < data/md_water_services.sql
 
   ## Note
-  - In the notebooks, replace the placeholders([USERNAME] and [PASSWORD]) in the SQL connection string with your local MySQL credentials:
-  - ## %sql mysql+pymysql://[USERNAME]:[PASSWORD]@localhost:3306/md_water_services
+  - In the notebooks, replace the placeholders ([USERNAME] and [PASSWORD]) in the SQL connection string with your local MySQL credentials:
+  - %sql mysql+pymysql://[USERNAME]:[PASSWORD]@localhost:3306/md_water_services
   - Install Dependencies
   - pip install -r requirements.txt
   - Run Jupyter Lab
@@ -99,5 +99,5 @@ You can use any of the following approaches to set up and run the project:
 Contributions are welcome! If you have improvement suggestions, please fork the repository and create a pull request. For major changes, please open an issue first to discuss what you would like to change
   
 ---
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
