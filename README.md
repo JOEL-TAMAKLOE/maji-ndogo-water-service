@@ -46,9 +46,8 @@ The purpose of this project is to:
 
 ## Project Structure
 ```plaintext
-├── data/                   # Contains database   
+├── data/                   # Contains sql data   
 ├── notebooks/              # Jupyter notebooks for analysis
-├── docs/                   # Documentation
 ├── Auditor_report.csv      # contains records of audits
 ├── .env.example            #Template for MySQL credentials
 ├── LICENSE                 # MIT license              
