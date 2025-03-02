@@ -1,8 +1,0 @@
-# Exclude sensitive files
-.env
-
-# Exclude Jupyter checkpoint files
-*.ipynb_checkpoints
-
-# Exclude raw data
-data/raw/
