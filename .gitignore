@@ -1,0 +1,29 @@
+# .gitignore
+
+# Environment variables
+.env
+
+# Jupyter Notebook checkpoints
+*.ipynb_checkpoints/
+
+# Raw data files (large or sensitive)
+data/raw/
+*.csv
+*.xlsx
+*.sql
+
+# Python cache and virtual environments
+__pycache__/
+venv/
+env/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
